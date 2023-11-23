@@ -9,7 +9,24 @@
   </h2>
 {% endif %}
 
-<div class="main-section-recomendaciones-shopify color-{{ section.settings.color_scheme }}">
+<div class="container_recomendaciones_balmer ">
+  <div class="container_recomendacion container_1 color-{{ section.settings.color_scheme }}">
+    <div class="img_recomendacion">aqui va una imagen</div>
+    <div class="container_textos">
+      <div class="titulo_recomendacion">Aquí va un título de recomendación</div>
+      <div class="texto_recomendaciom">Aquí va un cuerpo de recomendación</div>
+    </div>
+  </div>
+  <div class="container_recomendacion container_2 color-{{ section.settings.color_scheme }}">
+    <div class="img_recomendacion">aqui va una imagen</div>
+    <div class="container_textos">
+      <div class="titulo_recomendacion">Aquí va un título de recomendación</div>
+      <div class="texto_recomendaciom">Aquí va un cuerpo de recomendación</div>
+    </div>
+  </div>
+</div>
+
+<div class="main-section-recomendaciones-shopify ">
   <div class="contenedor_principal_row">
     <div class="caja_contenido_recomendaciones_rebmrak contenido_1">
       <div class="img_recomendacion">
@@ -35,14 +52,6 @@
     </div>
   </div>
 </div>
-
-<style>
-  .img_recomendacion {
-    width: 20%;
-    max-width: 30%;
-    min-width: 10%;
-  }
-</style>
 
 {% schema %}
 {
