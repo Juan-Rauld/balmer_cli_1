@@ -1,110 +1,122 @@
-{{ 'custom.css' | asset_url | stylesheet_tag }}
+{{ 'recomendaciones-generadores-balmer.css' | asset_url | stylesheet_tag }}
 
+{% if section.settings.titulo_seccion_recomendacion_balmer %}
+  <h2
+    class=""
+    style="background-color: {{ section.settings.fondo_titulo_seccion_recomendacion }}; color: {{ section.settings.texto_titulo_seccion_recomendacion }};"
+  >
+    {{ section.settings['titulo_seccion_recomendacion_balmer-text'] }}
+  </h2>
+{% endif %}
 
-
-{% if section.settings.titulo_seccion_recomendacion_rembrak %}
-    <h2 class="barra_titulo_seccion_recomendacion">{{ section.settings.titulo_seccion_recomendacion_rembrak_texto }}</h2>
-  {% endif %}
-  
-  <div class="main-section-recomendaciones-shopify">
-    <div class="contenedor_principal_row">
-      <div class="caja_contenido_recomendaciones_rebmrak contenido_1">
-        <div class="img_recomendacion">
-          {% comment %}
-            <img
-              src={{ section.settings.logo_recomendacion_1 }}
-              alt=""
-              srcset=""
-            >
-          {% endcomment %}
-  
-          {% render 'image-element', image: section.settings.logo_recomendacion_1 %}
-        </div>
-        <div class="texto_recomendaciones_rembrak">
-          <h3 class="titulo_recomendacion">{{ section.settings.titulo_recomendacion_sub_1 }}</h3>
-          <p class="descripcion_recomendacion">
-            {{ section.settings.descripcion_recomendacion_1 }}
-          </p>
-        </div>
+<div class="main-section-recomendaciones-shopify color-{{ section.settings.color_scheme }}">
+  <div class="contenedor_principal_row">
+    <div class="caja_contenido_recomendaciones_rebmrak contenido_1">
+      <div class="img_recomendacion">
+        {% render 'image-element', image: section.settings.logo_recomendacion_1 %}
       </div>
-      <div class="caja_contenido_recomendaciones_rebmrak contenido_2">
-        <div class="img_recomendacion">
-          {% render 'image-element', image: section.settings.logo_recomendacion_2 %}
-        </div>
-        <div class="texto_recomendaciones_rembrak">
-          <h3 class="titulo_recomendacion">{{ section.settings.titulo_recomendacion_sub_2 }}</h3>
-          <p class="descripcion_recomendacion">
-            {{ section.settings.descripcion_recomendacion_2 }}
-          </p>
-        </div>
+      <div class="texto_recomendaciones_balmer">
+        <h3 class="titulo_recomendacion">{{ section.settings.titulo_recomendacion_sub_1 }}</h3>
+        <p class="descripcion_recomendacion">
+          {{ section.settings.descripcion_recomendacion_1 }}
+        </p>
+      </div>
+    </div>
+    <div class="caja_contenido_recomendaciones_rebmrak contenido_2">
+      <div class="img_recomendacion">
+        {% render 'image-element', image: section.settings.logo_recomendacion_2 %}
+      </div>
+      <div class="texto_recomendaciones_balmer">
+        <h3 class="titulo_recomendacion">{{ section.settings.titulo_recomendacion_sub_2 }}</h3>
+        <p class="descripcion_recomendacion">
+          {{ section.settings.descripcion_recomendacion_2 }}
+        </p>
       </div>
     </div>
   </div>
-  
-  <style>
-    .img_recomendacion {
+</div>
+
+<style>
+  .img_recomendacion {
     width: 20%;
     max-width: 30%;
     min-width: 10%;
   }
-  </style>
-  
-  {% schema %}
-  {
-    "name": "Recomendaciones Rembrak",
-    "settings": [
-      {
-        "type": "checkbox",
-        "id": "titulo_seccion_recomendacion_rembrak",
-        "label": "Mostrar título",
-        "default": false
-      },
-      {
-        "type": "text",
-        "id": "titulo_seccion_recomendacion_rembrak_texto",
-        "label": "Título sección recomendaciones",
-        "default": "RECOMENDACIONES PARA UN BUEN USO DE TU GENERADOR"
-      },
-      {
-        "type": "image_picker",
-        "id": "logo_recomendacion_1",
-        "label": "Logo recomendación no. 1"
-      },
-      {
-        "type": "text",
-        "id": "titulo_recomendacion_sub_1",
-        "label": "Título de recomendacion específica no.1",
-        "default": "Título de recomendación no. 1"
-      },
-      {
-        "type": "richtext",
-        "id": "descripcion_recomendacion_1",
-        "label": "Descripción de recomendación 1",
-        "default": "<p>aquí va el texto de descripción no. 1</p>"
-      },
-      {
-        "type": "image_picker",
-        "id": "logo_recomendacion_2",
-        "label": "Logo recomendación no. 2"
-      },
-      {
-        "type": "text",
-        "id": "titulo_recomendacion_sub_2",
-        "label": "Título recomendacion específica no. 2",
-        "default": "Título de recomendación no. 2"
-      },
-      {
-        "type": "richtext",
-        "id": "descripcion_recomendacion_2",
-        "label": "Descripción de recomendación no. 2",
-        "default": "<p>aquí va el texto de descripción no. 2</p>"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Recomendaciones Rembrak"
-      }
-    ]
-  }
-  {% endschema %}
-  
+</style>
+
+{% schema %}
+{
+  "name": "Recomendaciones Balmer",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "titulo_seccion_recomendacion_balmer",
+      "label": "Mostrar título",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "fondo_titulo_seccion_recomendacion",
+      "label": "Color de fondo",
+      "default": "#268506"
+    },
+    {
+      "type": "color",
+      "id": "texto_titulo_seccion_recomendacion",
+      "label": "Color de texto",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "text",
+      "id": "titulo_seccion_recomendacion_balmer-text",
+      "label": "Título sección recomendaciones",
+      "default": "RECOMENDACIONES PARA UN BUEN USO DE TU GENERADOR"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_recomendacion_1",
+      "label": "Logo recomendación no. 1"
+    },
+    {
+      "type": "text",
+      "id": "titulo_recomendacion_sub_1",
+      "label": "Título de recomendacion específica no.1",
+      "default": "Título de recomendación no. 1"
+    },
+    {
+      "type": "richtext",
+      "id": "descripcion_recomendacion_1",
+      "label": "Descripción de recomendación 1",
+      "default": "<p>aquí va el texto de descripción no. 1</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_recomendacion_2",
+      "label": "Logo recomendación no. 2"
+    },
+    {
+      "type": "text",
+      "id": "titulo_recomendacion_sub_2",
+      "label": "Título recomendacion específica no. 2",
+      "default": "Título de recomendación no. 2"
+    },
+    {
+      "type": "richtext",
+      "id": "descripcion_recomendacion_2",
+      "label": "Descripción de recomendación no. 2",
+      "default": "<p>aquí va el texto de descripción no. 2</p>"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "default": "scheme_1",
+      "label": "Color Scheme"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Recomendaciones balmer"
+    }
+  ]
+}
+{% endschema %}
