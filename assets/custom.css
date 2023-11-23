@@ -1,0 +1,515 @@
+/* Estilo de todos los headers de colecciones, páginas y blogs. Editado por Juan Rauld - Agosto 23' */
+.banner .headline {
+    width: 100%;
+    overflow: hidden;
+    color: #0a76d1;
+    font-weight: 900;
+    font-size: 5vw;
+}
+
+@media only screen and (max-width: 767px) {
+    .banner .headline {
+        font-size: 5.5vw;
+    }
+
+    .banner .caption-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 1em;
+    }
+}
+
+.banner .caption-content {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: baseline;
+}
+
+.price-ui-badge__sticker,
+.global-button,
+.contact_email {
+    border-radius: 5px
+}
+
+/* Ya sé que vas a decir que es un parche, pero toda la plantilla está parchada. #AYUDA */
+@media only screen and (max-width: 766px) {
+    .page_banner {
+        position: absolute;
+        margin-bottom: 1rem;
+    }
+
+    .sidebar {
+        margin-top: 1rem;
+    }
+}
+
+/* sección SAC (servicio al cliente) */
+.container_sac {
+    display: block;
+    margin: 0.5rem 0;
+    width: 100%;
+}
+
+.box_sac {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 3rem;
+}
+
+.box_sac_sub {
+    padding: 2rem 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    padding: 13px 20px;
+    text-align: center;
+    line-height: 1.2;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-break: break-word;
+    cursor: pointer;
+    transition: all .2s linear;
+    border-color: #ccc;
+    color: #000000;
+}
+
+.contenedor_1 {
+    border-style: solid none solid solid;
+    border-radius: 5px 0 0 5px;
+    flex-grow: 1;
+    cursor: default;
+
+}
+
+.contenedor_2 {
+    border-style: solid;
+    border-radius: 0 5px 5px 0;
+    background-color: #008060;
+    color: white;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.smart-payment-button--false .purchase-details {
+    align-items: flex-end;
+    padding-bottom: 15px;
+}
+
+.contenedor_2>img {
+    width: 14px;
+    height: 100%;
+    padding: 0 0 0 4px;
+}
+
+.despacho-retiro-rembrak {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.despacho-retiro-rembrak>* {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0.5rem 0;
+    margin: 15px 0;
+    cursor: pointer;
+    border: solid #000000 1px;
+    border-radius: 5px;
+    width: 50%;
+    height: 100%;
+}
+
+.retiro-tienda-rembrak {
+    margin-left: 5px;
+}
+
+.despacho-domicilio-rembrak {
+    margin-right: 5px;
+}
+
+.icono-despacho-retiro img {
+    height: 2rem;
+    font-size: 13px;
+}
+
+.texto-despacho-retiro {
+    text-align: center;
+}
+
+/* clase selección */
+.retiro-tienda-rembrak-seleccion {
+    background-color: rgb(0, 119, 212);
+    color: white;
+}
+
+.retiro-tienda-rembrak-seleccion img {
+    filter: invert(1);
+}
+
+/* clase NO-selección */
+.retiro-tienda-rembrak-no-seleccion {
+    color: black;
+    background-color: transparent;
+}
+
+
+/* Sección producto Puesta en Marcha */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.seccion-bloque_puesta-marcha-retiro-despacho {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2rem;
+}
+
+
+
+.container_requiere-servicio-puesta-marcha {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+
+
+.header_container-requiere-servicio-puesta-marcha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icono_header-container-requiere-servicio-puesta-marcha {
+    padding: 0 1rem;
+    background-color: #4C4C4C;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    filter: invert(1);
+}
+
+
+/* template */
+.header_container-requiere-servicio-puesta-marcha {
+    grid-row: 1;
+    grid-column: span 2;
+    background-color: #EB9595;
+}
+
+.sub-item-container-titulo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.body_container-requiere-servicio-puesta-marcha {
+    display: grid;
+    grid-row: 2;
+    grid-column: span 2;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    line-height: 1;
+    font-size: 0.6;
+}
+
+#boton-ver-servicio-tecnico-autorizado-pagina-producto {
+    font-size: 0.6rem;
+    font-weight: bold;
+}
+
+.footer_container-requiere-servicio-puesta-marcha {
+    grid-row: 3;
+    grid-column: span 2;
+    background-color: gray;
+    text-align: center;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.titulo_header-container-requiere-servicio-puesta-marcha {
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_info-despacho-retiro {
+    padding: 0.5;
+    font-size: 0.8;
+    background-color: #B1B1B1;
+}
+
+.seccion-bloque_puesta-marcha-retiro-despacho>* {
+    flex: 1;
+    background-color: #e0e0e0;
+    /* Optional: for visual representation */
+    margin: 2rem 0;
+}
+
+/* sección info retiro */
+
+.container_info-despacho-retiro {
+    overflow: hidden;
+}
+
+.header_info-despacho-retiro {
+    display: flex;
+    height: 3rem;
+}
+
+.header_info-despacho-retiro>* {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 0.5rem;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.active-info-despacho-retiro {
+    background-color: #0077d4;
+    ;
+    color: white;
+}
+
+
+.active-info-despacho-retiro>* {
+    color: white !important;
+}
+
+
+.active-info-despacho-retiro>img {
+    filter: invert(1);
+}
+
+.body_container-requiere-servicio-puesta-marcha {
+    padding: 1rem;
+}
+
+.contenido_retiro {
+    display: none;
+}
+
+.contenido_despacho,
+.contenido_retiro {
+    padding: 2rem;
+}
+
+.contenido_despacho>*,
+.contenido_retiro>* {
+    line-height: 1.5;
+}
+
+.titulo_seccion_retiro_despacho {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .icono_header-container-requiere-servicio-puesta-marcha {
+        display: none;
+    }
+
+    .seccion-bloque_puesta-marcha-retiro-despacho {
+        display: block;
+    }
+}
+
+/* Sección recomendaciones */
+
+.barra_titulo_seccion_recomendacion {
+    background-color: #0077d4;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.titulo_recomendacion {
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%
+}
+
+.main-section-recomendaciones-shopify {
+    display: flex;
+    align: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.contenedor_principal_row {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+
+.caja_contenido_recomendaciones_rebmrak {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+    gap: 1rem;
+    padding: 1rem;
+    flex: 1 1 0;
+}
+
+
+.img_recomendacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_recomendacion>* {
+    width: 50%;
+    flex: 1;
+}
+
+.texto_recomendaciones_rembrak {
+    flex: 3;
+}
+
+
+.caja_contenido_recomendaciones_rebmrak p {
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.caja_contenido_recomendaciones_rebmrak h3 {
+    text-align: center;
+    color: #0077d4;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.img_recomendacion>* {
+    color: #0077d4;
+    /* imposibilidad cambio de color en https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(31%) sepia(80%) saturate(2613%) hue-rotate(189deg) brightness(91%) contrast(101%);
+}
+
+
+
+/* responsivo */
+@media (max-width: 768px) {
+    .main-section-recomendaciones-shopify {
+        display: block;
+        height: 100% !important;
+    }
+
+    .caja_contenido_recomendaciones_rebmrak p {
+        text-align: center;
+        font-size: 0.8rem;
+        margin: 0.5rem 0;
+        padding: 0;
+    }
+
+    .contenedor_principal_row {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .caja_contenido_recomendaciones_rebmrak {
+        flex: 0;
+    }
+
+
+    .texto_recomendaciones_rembrak {
+        flex: 1;
+        padding: 1rem 0;
+    }
+
+    .barra_titulo_seccion_recomendacion {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .barra_titulo_seccion_recomendacion {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .titulo_recomendacion {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .img_recomendacion {
+        width: 3.125rem;
+    }
+
+    .caja_contenido_recomendaciones_rebmrak h3 {
+        font-size: 1rem;
+    }
+
+    .titulo_seccion_retiro_despacho {
+        font-size: 0.7rem;
+    }
+
+
+    .titulo_header-container-requiere-servicio-puesta-marcha {
+        font-size: 0.7rem;
+    }
+
+    .footer_container-requiere-servicio-puesta-marcha {
+        font-size: 0.7rem;
+
+    }
+}
+
+/* fin responsivo */
+
+/* Imagen de marca bajo imagenes/fotos de producto */
+.contenedor_logo_marca_rembrak_pagina_producto {
+    height: 100%;
+    /*   position: relative;
+   */
+}
+
+.logo_marca_rembrak_pagina_producto {
+    /*   padding: 1rem;
+    position:sticky;
+   */
+    top: 50%;
+}

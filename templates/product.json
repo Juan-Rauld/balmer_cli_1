@@ -1,1 +1,123 @@
-{"sections":{"main":{"type":"main-product","blocks":{"vendor":{"type":"text","settings":{"text":"{{ product.vendor }}","text_style":"uppercase"}},"title":{"type":"title","settings":{}},"price":{"type":"price","settings":{}},"variant_picker":{"type":"variant_picker","settings":{"picker_type":"dropdown"}},"quantity_selector":{"type":"quantity_selector","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":false,"show_gift_card_recipient":true}},"description":{"type":"description","settings":{}},"bcc68102-30fe-4374-a361-91e29454e688":{"type":"collapsible_tab","settings":{"heading":"DESPACHO","icon":"truck","content":"","page":""}},"ab9d6515-3872-4327-9624-3912f73a2eb3":{"type":"collapsible_tab","settings":{"heading":"Información técnica","icon":"clipboard","content":"<p><strong>Potencia Máxima:<\/strong> 6.5 kW \/ 6.5 kVA<\/p><p><strong>Potencia continua:<\/strong> 6 kW \/ 6 kVA<\/p><p><strong>Combustible:<\/strong> Gasolina<\/p><p><strong>Modelo:<\/strong> Kolvok GO70GTA<\/p><p><strong>Fases:<\/strong> Monofásico<\/p><p><strong>Voltaje:<\/strong> 220 V<\/p><p><strong>Partida:<\/strong> Eléctrica \/ Manual<\/p><p><strong>Frecuencia:<\/strong> 50 Hz<\/p><p><strong>Refrigeración:<\/strong> Por aire<\/p><p><strong>Dimensiones (Largo x Ancho x Alto): <\/strong>73x57x58 cm (con ruedas son 69 cm de ancho)<\/p><p><strong>Peso vacío:<\/strong>90 kg<\/p><p><strong>Capacidad estanque combustible:<\/strong> 28 L <\/p>","page":""}},"5a8efab6-66d9-4a41-a971-701f0b5a7e25":{"type":"popup","settings":{"text":"RED DE SERVICIOS TÉCNICOS","page":""}}},"block_order":["vendor","title","price","variant_picker","quantity_selector","buy_buttons","description","bcc68102-30fe-4374-a361-91e29454e688","ab9d6515-3872-4327-9624-3912f73a2eb3","5a8efab6-66d9-4a41-a971-701f0b5a7e25"],"settings":{"enable_sticky_info":true,"media_size":"large","constrain_to_viewport":true,"media_fit":"contain","gallery_layout":"stacked","media_position":"left","image_zoom":"lightbox","mobile_thumbnails":"hide","hide_variants":true,"enable_video_looping":false,"padding_top":36,"padding_bottom":12}},"related-products":{"type":"related-products","settings":{"heading":"You may also like","heading_size":"h2","products_to_show":4,"columns_desktop":4,"color_scheme":"background-1","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"columns_mobile":"2","padding_top":36,"padding_bottom":28}}},"order":["main","related-products"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "subtitle"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "bcc68102-30fe-4374-a361-91e29454e688": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "DESPACHO",
+            "icon": "truck",
+            "content": "",
+            "page": ""
+          }
+        },
+        "ab9d6515-3872-4327-9624-3912f73a2eb3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Información técnica",
+            "icon": "clipboard",
+            "content": "<p><strong>Potencia Máxima:<\/strong> 6.5 kW \/ 6.5 kVA<\/p><p><strong>Potencia continua:<\/strong> 6 kW \/ 6 kVA<\/p><p><strong>Combustible:<\/strong> Gasolina<\/p><p><strong>Modelo:<\/strong> Kolvok GO70GTA<\/p><p><strong>Fases:<\/strong> Monofásico<\/p><p><strong>Voltaje:<\/strong> 220 V<\/p><p><strong>Partida:<\/strong> Eléctrica \/ Manual<\/p><p><strong>Frecuencia:<\/strong> 50 Hz<\/p><p><strong>Refrigeración:<\/strong> Por aire<\/p><p><strong>Dimensiones (Largo x Ancho x Alto): <\/strong>73x57x58 cm (con ruedas son 69 cm de ancho)<\/p><p><strong>Peso vacío:<\/strong>90 kg<\/p><p><strong>Capacidad estanque combustible:<\/strong> 28 L <\/p>",
+            "page": ""
+          }
+        },
+        "5a8efab6-66d9-4a41-a971-701f0b5a7e25": {
+          "type": "popup",
+          "settings": {
+            "text": "RED DE SERVICIOS TÉCNICOS",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "bcc68102-30fe-4374-a361-91e29454e688",
+        "ab9d6515-3872-4327-9624-3912f73a2eb3",
+        "5a8efab6-66d9-4a41-a971-701f0b5a7e25"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-6258c290-a86c-4bc1-8db9-0848f960a951",
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "cover",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": true,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "Generadores similares",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-6258c290-a86c-4bc1-8db9-0848f960a951",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products"
+  ]
+}
